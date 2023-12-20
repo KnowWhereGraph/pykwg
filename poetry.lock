@@ -111,6 +111,20 @@ files = [
 six = "*"
 
 [[package]]
+name = "isort"
+version = "5.13.2"
+description = "A Python utility / library to sort Python imports."
+optional = false
+python-versions = ">=3.8.0"
+files = [
+    {file = "isort-5.13.2-py3-none-any.whl", hash = "sha256:8ca5e72a8d85860d5a3fa69b8745237f2939afe12dbf656afbcb47fe72d947a6"},
+    {file = "isort-5.13.2.tar.gz", hash = "sha256:48fdfcb9face5d58a4f6dde2e72a1fb8dcaf8ab26f95ab49fab84c2ddefb0109"},
+]
+
+[package.extras]
+colors = ["colorama (>=0.4.6)"]
+
+[[package]]
 name = "mypy-extensions"
 version = "1.0.0"
 description = "Type system extensions for programs checked with the mypy type checker."
@@ -266,4 +280,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "8b7db3a38a9d77c004e90c29cc6e1ce8869f5cd6e366fe83cd2e4f827bf3ee75"
+content-hash = "ff76f525448645d57b1d5541739dd39179037d495427a7d60400bce9ee66b335"

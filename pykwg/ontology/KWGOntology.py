@@ -1,11 +1,11 @@
-from rdflib import Namespace, RDFS, RDF, TIME, OWL, XSD
+from rdflib import OWL, RDF, RDFS, TIME, XSD, Namespace
 from rdflib.namespace import DefinedNamespace
+
 from ..config import Config
 
 
 class KWGOntology(DefinedNamespace):
     def __init__(self):
-        super().__init__()
         config = Config()
         self.prefix = {
             "kwgr": Namespace(f"{config.base_address}lod/resource"),
