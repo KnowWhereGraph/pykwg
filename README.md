@@ -1,5 +1,5 @@
 # pykwg
-Python pacakge for interacting with KnowWhereGrapg
+Python pacakge for interacting with KnowWhereGraph
 
 ## Using
 
