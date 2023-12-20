@@ -8,8 +8,8 @@ def test_kwg_base_default():
     :return: None
     """
     onto = KWGOntology()
-    assert onto.prefix['kwgr'] == 'http://stko-kwg.geog.ucsb.edu/lod/resource'
-    assert onto.prefix['kwg-ont'] == 'http://stko-kwg.geog.ucsb.edu/lod/ontology'
+    assert onto.prefix["kwgr"] == "http://stko-kwg.geog.ucsb.edu/lod/resource"
+    assert onto.prefix["kwg-ont"] == "http://stko-kwg.geog.ucsb.edu/lod/ontology"
 
 
 def test_kwg_base_custom(monkeypatch):
@@ -21,5 +21,5 @@ def test_kwg_base_custom(monkeypatch):
     mock_url = "http://aFakeBaseURL/"
     monkeypatch.setenv("KWG_BASE_ADDRESS", mock_url)
     onto = KWGOntology()
-    assert onto.prefix['kwgr'] == f'{mock_url}lod/resource'
-    assert onto.prefix['kwg-ont'] == f'{mock_url}lod/ontology'
+    assert onto.prefix["kwgr"] == f"{mock_url}lod/resource"
+    assert onto.prefix["kwg-ont"] == f"{mock_url}lod/ontology"

@@ -11,6 +11,15 @@ pip install pykwg
 
 ## Developing
 
-```commandline
 
+Run unit tests with
+```commandline
+poetry run pytest
+```
+
+Before submitting a pull rquest, format the code with
+
+```commandline
+poetry run black .
+poetry run isort .
 ```
